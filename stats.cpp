@@ -12,9 +12,9 @@ Statistics::resultStats Statistics::ComputeStatistics(const std::vector<float> &
     return l_obj;
 }
 
-int main()
-{
-    auto result = Statistics::ComputeStatistics({1.2, 4.5, 6.1, 7.7});
-    std::cout << "min: " << result.min << " max: " << result.max << " avg: " << result.average << std::endl;
-    return 0;
-}
+// int main()
+// {
+    // auto result = Statistics::ComputeStatistics({1.2, 4.5, 6.1, 7.7});
+    // std::cout << "min: " << result.min << " max: " << result.max << " avg: " << result.average << std::endl;
+    // return 0;
+// }
