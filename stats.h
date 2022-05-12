@@ -13,9 +13,7 @@ namespace Statistics
         float max{0};
         float min{0};
     };
-    // Stats ComputeStatistics(const std::vector<___> &);
-    // void ComputeStatistics(std::vector<std::array<float, 4>> &inputVector);
+
     resultStats ComputeStatistics(const std::vector<float> &inputVector);
-    // void ComputeStatistics(const computedStats &inputVector);
 
 }
