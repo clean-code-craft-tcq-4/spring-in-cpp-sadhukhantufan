@@ -17,3 +17,20 @@ namespace Statistics
     resultStats ComputeStatistics(const std::vector<float> &inputVector);
 
 }
+
+namespace StatsAlerter
+{
+    class EmailAlert
+    {
+    public:
+        bool emailSent{};
+    };
+
+    class LEDAlert
+    {
+    public:
+        bool ledGlows{};
+    };
+
+    void checkAndAlert(const std::vector<float> &inputVector, EmailAlert &email, LEDAlert &led, const float maxThreshold);
+}
