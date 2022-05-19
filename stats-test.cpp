@@ -20,7 +20,7 @@ TEST_CASE("average is NaN for empty array")
     // All fields of computedStats (average, max, min) must be
     // NAN (not-a-number), as defined in math.h
     std::cout << computedStats.average << std::endl;
-    CHECK_FALSE(!std::isnan(computedStats.average));
+    REQUIRE(std::isnan(computedStats.average));
 }
 
 TEST_CASE("raises alerts when max is greater than threshold")
